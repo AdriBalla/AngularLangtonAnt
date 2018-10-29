@@ -8,8 +8,8 @@ This project was generated with Angular CLI version 7.0.2.
 
 It is composed of two containers : 
 
-*    gol_angular : Angular
-*    gol_nginx : Nginx 
+*    langton_angular : Angular
+*    langton_nginx : Nginx 
 
 
 ## Prerequisites
