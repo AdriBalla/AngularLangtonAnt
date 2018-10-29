@@ -1,0 +1,29 @@
+<div class="left">
+    <div class="top_bar">
+        <div class="subtitle">Controls</div>
+        <div class="label">Grid width : <input [(ngModel)]="inputWidth" placeholder="80"/><br/></div>
+        <div class="label">Grid height :<input [(ngModel)]="inputHeight" placeholder="50"/><br/></div>
+        <div>
+            <input type="button" class="button" value="↻" (click)="initGrid()">
+            <input type="button" class="button" value="▶" (click)="run()">
+            <input type="button" class="button" value="◼" (click)="stop()">
+        </div>
+    </div>
+
+    <div class="top_bar">
+        <div id="indexGeneration" [class.invisible]="indexGeneration == 0" class="red">Generation {{indexGeneration}}</div>
+    </div>
+</div>
+
+<div class="right">
+    <table>
+        <tr *ngFor="let y of height; let Ypos = index">
+            <td *ngFor="let x of width; let Xpos = index" id="{{Xpos}}-{{Ypos}}" [class.black]="isCellBlack(Xpos,Ypos)" (click)="changeColor(Xpos,Ypos)">
+                {{getAntCharacter(Xpos,Ypos)}}
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
