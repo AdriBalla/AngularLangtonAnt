@@ -1,4 +1,4 @@
-# Dockerized Angular Game Of Life
+# Dockerized Angular Langton's Ant
 
 Docker and Angular Projet to illustrate the Langton's Ant
 
